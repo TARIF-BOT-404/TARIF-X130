@@ -1,27 +1,35 @@
+const axios = require("axios");
+const fs = require("fs-extra");
+const request = require("request");
 module.exports = {
 	config: {
 		name: "out",
+		aliases: ["vag"],
 		version: "1.0",
-		author: "XyryllPanget",
+		author: "ncs pro with TARIF",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
-			vi: "",
-			en: "kick 🦶 bot from gc by owner bot"
-		},
-		longDescription: {
-			vi: "",
-			en: "remove bot from group "
-		},
-		category: "owner",
+		shortDescription: "bot will leave gc",
+		longDescription: "",
+		category: "𝗧𝗔𝗥𝗜𝗙",
 		guide: {
-			vi: "",
-			en: "just write غادر"
+			vi: "{pn} [tid,blank]",
+			en: "{pn} [tid,blank]"
 		}
- },
-	onStart: async function ({ api, args, message, event }) {
+	},
 
-			if (!args[0]) return api.removeUserFromGroup(api.getCurrentUserID(), event.threadID);
-				if (!isNaN(args[0])) return api.removeUserFromGroup(api.getCurrentUserID(), args.join(" "));
-	}
-}
+	onStart: async function ({ api,event,args, message }) {
+        const permission = ["100081491574719"];
+        if (!permission.includes(event.senderID)) {
+            api.sendMessage("𝗢𝗻𝗹𝘆 𝗺𝘆 𝗯𝗼𝘀𝘀 𝗧𝗮𝗿𝗶𝗳, 𝘄𝗶𝗹𝗹 𝗵𝗮𝘀 𝗿𝗶𝗴𝗵𝘁 𝗳𝗼𝗿 𝘁𝗵𝗶𝘀 𝗖𝗺𝗱 😒.", event.threadID, event.messageID);
+            return;
+        }
+ var id;
+ if (!args.join(" ")) {
+ id = event.threadID;
+ } else {
+ id = parseInt(args.join(" "));
+ }
+ return api.sendMessage('𝗘𝗸𝗮𝗻𝗲 𝘁𝗼𝗿𝗮 𝘀𝗵𝗼𝗯 𝗹𝘂𝗰𝗰𝗵𝗮 𝗮𝗺𝗶 𝗷𝗮𝗶 𝗴𝗮', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
+		}
+	};
