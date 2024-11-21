@@ -5,7 +5,7 @@ module.exports = {
 	config: {
 		name: "info",
 		version: "1.0",
-		author: "cliff",
+		author: "NTKhang",
 		countDown: 20,
 		role: 0,
 		shortDescription: { vi: "", en: "" },
@@ -15,15 +15,18 @@ module.exports = {
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
-		const botName = "yazky";
-		const botPrefix = "!";
-		const authorName = "CliffVincent";
-		const ownAge = "18";
-		const teamName = "Github team";
-		const authorFB = "https://www.facebook.com/swordigo.swordslush";
-		const authorInsta = "Thead469";
-		const tikTok = "tiktok.com/@Cliffthegreat0";
-		const urls = JSON.parse(fs.readFileSync('cliff.json'));
+		const authorName = "亗 ɱʀ ƬʌʀᎥʆ Ƴt✓𝐱130";
+		const ownAge = "『 16+』";
+		const messenger = "https://www.facebook.com/Mr.tarif.yt.x130";
+		const authorFB = "https://m.me/Mr.tarif.yt.x130";
+		const authorNumber = "‣𒁍01615796682 ";
+		const Status = "Single Pro Max";
+		const urls = [
+"https://i.imgur.com/ShEH30R.jpeg",
+"https://i.imgur.com/l1k94bj.jpeg",
+"https://i.imgur.com/8a6M5Ii.gif",
+"https://i.imgur.com/fO1d0Nb.jpeg"
+];
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz('Asia/Jakarta');
 		const date = now.format('MMMM Do YYYY');
@@ -36,19 +39,25 @@ module.exports = {
 		const uptimeString = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
 		message.reply({
-			body: `《  Bot & Owner Info 》
-\Name: ${botName}
-\Bot Prefix: ${botPrefix}
-\owner: ${authorName}
-\age : ${ownAge}
-\Facebook: ${authorFB}
-\Instagram: ${authorInsta}
-\TikTok: ${tikTok}
-\Datee: ${date}
-\Time: ${time}
-\Team: ${teamName}
-\Uptime: ${uptimeString}
-\===============`,
+			body: `‣𒁍❏✓𝐁𝐨𝐭✓𝐀𝐧𝐝✓𝐎𝐰𝐧𝐞𝐫✓𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✓❏
+╭─❏Ⴆσƚ ɳαɱҽ : 
+╰‣{global.GoatBot.config.nickNameBot}
+╰‣❏✓𝐁𝐎𝐓 𝐒𝐲𝐬𝐓𝐞𝐦 𝐏𝐫𝐞𝐟𝐢𝐱 : ${global.GoatBot.config.prefix}
+╰‣❏𝐎𝐰𝐧𝐞𝐫 𝐍𝐚𝐦𝐞 : ${authorName}
+╰‣❏𝐀𝐠𝐞 : ${ownAge}
+╰‣❏𝐑𝐞𝐥𝐚𝐓𝐢𝐨𝐧𝐬𝐡𝐢𝐩 : ${Status}
+╰‣❏𝐖𝐩 : ${authorNumber}
+╰‣❏𝐅𝐚𝐜𝐞𝐁𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : ${authorFB}
+╰‣❏𝐃𝐚𝐭𝐞 : ${date}
+╰‣❏𝐍𝐨𝐰 𝐓𝐢𝐦𝐞 : ${time}
+╰‣❏𝐍𝐧𝐲 𝐡𝐞𝐥𝐩 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 : ${messenger}
+╰‣❏𝐁𝐎𝐓 𝐢𝐬 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 : ${uptimeString}
+╭─𝐓𝐠: https://t.me/error
+╰‣❏𝐈𝐧𝐬𝐓𝐚: ×××
+╰‣❏𝐂𝐚𝐨𝐂𝐮𝐭 : ar a bah nai
+╰‣❏𝐓𝐢𝐤𝐓𝐨𝐤 : md.tarif0196
+╰‣❏𝐘𝐨𝐮𝐓𝐮𝐛𝐞 : aj nai bole
+\‣𒁍✓❏‣𒁍Ꮇʀ✓┳ꋬɾ꒐ᶠ✓𝐱130`,
 			attachment: await global.utils.getStreamFromURL(link)
 		});
 	},
