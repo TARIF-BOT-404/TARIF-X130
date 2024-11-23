@@ -30,7 +30,7 @@ module.exports = {
 			multiple1: "𝘆𝗼𝘂",
 			multiple2: "𝘆𝗼𝘂 𝗴𝘂𝘆𝘀",
 			defaultWelcomeMessage: `👨🏿‍🌾 | 𝗪𝗲𝗹𝗰𝗼𝗺𝗲
-━━━━━━━━━━━━ Hello {userName}   \n BOX  {multiple} To the chat box: {boxName}\ 𝗁𝖺𝗏𝖾 a nice🪄  {session}👨🏿‍🌾🪄`
+━━━━━━━━━━━━ 		  Hello {userName}   \n BOX  {multiple} To the chat		 box: {boxName}\ 𝗁𝖺𝗏𝖾 a nice🪄  {session}👨🏿‍🌾🪄`
 		}
 	},
 
