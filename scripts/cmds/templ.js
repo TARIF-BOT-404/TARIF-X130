@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 module.exports.config = {
-  name: "tempmail",
-aliases: ["tm"],
+  name: "temp",
+aliases: ["temp"],
   version: "1.0",
   role: 0,
   countdown: 5,

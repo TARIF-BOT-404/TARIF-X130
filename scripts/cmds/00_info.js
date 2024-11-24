@@ -10,22 +10,22 @@ module.exports = {
 		role: 0,
 		shortDescription: { vi: "", en: "" },
 		longDescription: { vi: "", en: "" },
-		category: "owner",
+		category: "𝐎𝐰𝐧𝐞𝐫",
 		guide: { en: "" },
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
 		const authorName = "亗 ɱʀ ƬʌʀᎥʆ Ƴt✓𝐱130";
 		const ownAge = "『 16+』";
-		const messenger = "https://www.facebook.com/Mr.tarif.yt.x130";
-		const authorFB = "https://m.me/Mr.tarif.yt.x130";
+		const messenger = "https://m.me/Mr.tarif.yt.x130";
+		const authorFB = "https://www.facebook.com/Mr.tarif.yt.x130";
 		const authorNumber = "‣𒁍01615796682 ";
 		const Status = "Single Pro Max";
 		const urls = [
-"https://i.imgur.com/ShEH30R.jpeg",
-"https://i.imgur.com/l1k94bj.jpeg",
-"https://i.imgur.com/8a6M5Ii.gif",
-"https://i.imgur.com/fO1d0Nb.jpeg"
+"https://i.imgur.com/kZC8Ry6.jpeg",
+"https://i.imgur.com/3UX4ZLL.jpeg",
+"https://i.imgur.com/StyeQnD.jpeg",
+"https://i.imgur.com/tfmSsAn.jpeg"
 ];
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz('Asia/Jakarta');
@@ -41,7 +41,7 @@ module.exports = {
 		message.reply({
 			body: `‣𒁍❏✓𝐁𝐨𝐭✓𝐀𝐧𝐝✓𝐎𝐰𝐧𝐞𝐫✓𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✓❏
 ╭─❏Ⴆσƚ ɳαɱҽ : 
-╰‣{global.GoatBot.config.nickNameBot}
+╰‣❏ ‣𒁍Ꮇʀ✓ᵀᴬᴿᴵᶠ✓𝙱☺︎︎𝚃✓𝐱130
 ╰‣❏✓𝐁𝐎𝐓 𝐒𝐲𝐬𝐓𝐞𝐦 𝐏𝐫𝐞𝐟𝐢𝐱 : ${global.GoatBot.config.prefix}
 ╰‣❏𝐎𝐰𝐧𝐞𝐫 𝐍𝐚𝐦𝐞 : ${authorName}
 ╰‣❏𝐀𝐠𝐞 : ${ownAge}
@@ -54,10 +54,10 @@ module.exports = {
 ╰‣❏𝐁𝐎𝐓 𝐢𝐬 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 : ${uptimeString}
 ╭─𝐓𝐠: https://t.me/error
 ╰‣❏𝐈𝐧𝐬𝐓𝐚: ×××
-╰‣❏𝐂𝐚𝐨𝐂𝐮𝐭 : ar a bah nai
+╰‣❏𝐂𝐚p𝐂𝐮𝐭 : ar a bah nai
 ╰‣❏𝐓𝐢𝐤𝐓𝐨𝐤 : md.tarif0196
 ╰‣❏𝐘𝐨𝐮𝐓𝐮𝐛𝐞 : aj nai bole
-\‣𒁍✓❏‣𒁍Ꮇʀ✓┳ꋬɾ꒐ᶠ✓𝐱130`,
+\‣𒁍✓❏‣𒁍Ꮇʀ✓┳ꋬɾ꒐ᶠ✓𝐱130✓`,
 			attachment: await global.utils.getStreamFromURL(link)
 		});
 	},
